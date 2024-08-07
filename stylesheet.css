@@ -1,0 +1,636 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+#Index{
+    background-image:url("IMGS/INDEX/\(1\)\ TIENES\ UNA\ CUENTA_.jpg");
+    height: max-content;
+}
+
+/* HEADER INICIAL*/
+
+.indexheader {
+font-family: sans-serif;
+justify-content: center;
+display: flex;
+padding-top: 60px;
+}
+.indexheader a {
+    text-decoration: none;
+    color: #BF1EAB;
+    font-weight: bolder;
+    font-size: 28px;
+    }
+    
+/* PRINCIPAL INDEX*/
+
+.indexmain {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 71px;
+    font-family: sans-serif;
+}
+.indexmain h1 {
+   text-align: center;
+   color: #83015E;
+   font-size: 26px;
+   font-weight: bold;
+}
+
+.potencia {
+    text-align: center;
+    font-size: 16px;
+    color: #B0B0B0;
+ }
+
+ .indexmain button {
+    border-radius: 12px;
+    padding-left: 86px;
+    padding-right: 86px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+ }
+.login button {
+    background-color: #BE26A4;
+    color: white;
+    border-color: #BE26A4;
+}
+
+.signin button {
+    background-color:white;
+    color:#D7D6D6;
+    border-color: #D7D6D6;
+}
+
+.expertosLogin p {
+    color: #9800AB;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.expertosLogin p a {
+   text-decoration: none;
+   color: #9800AB;
+}
+
+.expertosSignin p {
+    color: #B0B0B0;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.expertosSignin p a {
+    color: #BE26A4;
+   text-decoration: none;
+}
+
+/* REGISTRO*/
+
+.company {
+    text-decoration: none;
+    color: #BF1EAB;
+    font-weight: bolder;
+    font-size: 28px;
+    font-family: sans-serif;
+ align-self: center;
+  }
+
+  .header2 {
+    display: flex;
+    justify-content: center;
+    position: relative;
+  }
+ 
+ .volver {
+    position: absolute;
+    padding-left: 60px;
+ }
+.pad {
+    padding-top: 60px;
+}
+.form {
+    background: rgb(107,1,165);
+    background: linear-gradient(180deg, rgba(107,1,165,1) 0%, rgba(65,1,110,1) 100%);   
+    width: fit-content;
+    padding-top:39px ;
+    padding-left: 116px;
+    padding-right: 116px;
+    padding-bottom: 90px;
+    font-family: sans-serif;
+    color: white;
+    margin-top: 30px;
+    border-radius: 26px;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2);
+    text-align: left;
+}
+
+.form input {
+    border-radius: 12px;
+    border: none;
+    background-color: white;
+    width: 387px;
+    height: 30px;
+    text-align: center;
+}
+.form h3 {
+  font-size: 20px;
+  text-align: center;
+}
+.continuar{
+    border-radius: 12px;
+    border: none;
+    background-color: #460275;
+    opacity: 75%;
+    width: 387px;
+    height: 30px;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2);
+}
+
+.Barra1 {
+    display: flex;
+    justify-content: center;
+}
+
+/* OBJETIVO*/
+
+.objetivo{
+    background: rgb(107,1,165);
+    background: linear-gradient(180deg, rgba(107,1,165,1) 0%, rgba(65,1,110,1) 100%);   
+    text-align: center;
+    width: fit-content;
+    padding-top:39px ;
+    padding-left: 116px;
+    padding-right: 116px;
+    padding-bottom: 39px;
+    font-family: sans-serif;
+    color: white;
+    margin-top: 30px;
+    border-radius: 26px;
+    box-shadow: lightslategray;
+}
+.obje {
+    border-radius: 12px;
+    border: none;
+    background-color: white;
+    width: 387px;
+    height: 30px;
+    text-align: center;
+    color: #9800AB;
+    font-size: 16px;
+    font-weight: bold;
+    align-content: center;
+    margin: 15px;
+}
+.obje:active{
+    background-color: #9800AB;
+    color: white;
+}
+.obje:visited{
+    background-color: #9800AB;
+    color: white;
+}
+
+/* SABES ALGO*/
+
+.inicial, .examen {
+    width: 268px;
+    height: 343px;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2);
+    border-radius: 26px;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    margin-top: 120px;
+    font-family: sans-serif;
+    text-align: center;
+}
+.inicial{
+    margin-right: 40px;
+}
+.examen{
+    margin-left: 40px;
+}
+.nivel a {
+    text-decoration: none;
+}
+.nivel p {
+    color:#B0B0B0;
+}
+.nivel{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+}
+.nivel h4{
+    font-size: 16px;
+    color:#9800AB;
+    font-weight: bold;
+}
+
+.Barra3{
+    display: flex;
+    justify-content: center; 
+}
+
+/* EXAMEN*/
+
+.answers{
+    font-family: sans-serif;  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.exam p {
+    font-family: sans-serif;
+    font-size: 16px;
+    color: #9800AB;  
+}
+#pregunta{
+    font-weight: bold;
+    font-size: 20px;
+    color: #9800AB;
+    font-family: sans-serif;
+}
+#respuesta li {
+    margin-bottom: 10px; /* Espacio entre cada respuesta */
+    cursor: pointer; /* Cambia el cursor al pasar sobre las respuestas */
+    background-color: white;
+    border-radius: 12px;
+    width: 855px;
+    height: 57px;
+    align-content: center;
+    text-align: center;
+    color: #9800AB;
+    font-weight: bold;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2);
+    text-decoration: none;
+    list-style: none;
+}
+#respuesta li:hover{
+    background-color: #9800AB;
+    color: white;
+}
+
+.exam button {
+    border-radius: 12px;
+    border: none;
+    background-color: #460275;
+    opacity: 75%;
+    width: 387px;
+    height: 30px;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+}
+.left {
+    padding-left: 290px; 
+}
+.puntitos{
+    justify-content: center;
+    display: flex;
+}
+.Barra4{
+    display: flex;
+    justify-content: center; 
+}
+
+/*NIVEL ASIGNADO*/
+.asignado{
+    display: flex;
+    justify-content: center;
+}
+.intermedio{
+    border-radius: 12px;
+    border: none;
+    background-color: #FF5C00;
+    opacity: 75%;
+    width: 387px;
+    height: 30px;
+    color: white;
+    font-size: 20px;
+    font-weight: bold; 
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2);
+}
+
+.medio{
+    display: flex;
+    justify-content: center;
+}
+.Barra5 {
+    display: flex;
+    justify-content: center; 
+}
+
+/*RUBRO A ELECCION*/
+.rubro{
+    background-color:#FF5C00; 
+    opacity: 95%;
+    text-align: center;
+    width: fit-content;
+    padding-top:39px ;
+    padding-left: 116px;
+    padding-right: 116px;
+    padding-bottom: 39px;
+    font-family: sans-serif;
+    color: white;
+    margin-top: 30px;
+    border-radius: 26px;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2);
+}
+.rub {
+    border-radius: 12px;
+    border: none;
+    background-color: white;
+    width: 387px;
+    height: 30px;
+    text-align: center;
+    color: #FF5C00;
+    font-size: 16px;
+    font-weight: bold;
+    align-content: center;
+    margin: 15px;
+}
+.rub:active{
+    background-color: #FF5C00;
+    color: white;
+}
+.rub:visited{
+    background-color: #FF5C00;
+    color: white;
+}
+
+/*INICIO*/
+
+.nav nav {
+    float: left;
+    padding-top: 2.5%;
+    padding-left: 3%;
+    padding-right: 5%;
+    padding-bottom: 2.5%;
+    height: 1200px;
+}
+.nav a {
+    font-family: sans-serif;
+    text-decoration: none;
+}
+.nav h2 {
+    font-size: 20px;
+    font-weight: bold;
+    color: #460175;
+}
+.aprender, .practicar, .desafios, .perfil {
+   flex-direction: column;
+   border-radius: 12px;
+   padding:5px;
+   margin:10px;
+   align-items: center;
+}
+
+.nivel1{
+    background-color: #BE26A4;
+    width: 659px;
+    flex-direction: column;
+    display: flex;
+    font-family: sans-serif;
+    color: white;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 20px;
+    position: relative;
+}
+.gris{
+    color:#7D7979;
+    font-size:16px;
+    font-family: sans-serif;
+}
+.seis, .doce{
+    display: flex;
+}
+.seis{
+    margin-top: 39px;
+}
+.doce {
+    margin-top: 30px;
+}
+.a, .b, .c, .d, .e, .f, .g, .h, .i, .j, .k, .l {
+    margin-right:30px;
+}
+
+.nivel2{
+    background-color: #2690BE;
+    width: 659px;
+    flex-direction: column;
+    display: flex;
+    font-family: sans-serif;
+    color: white;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 20px;
+}
+.dieciocho, .veinticuatro{
+    display: flex;
+}
+.dieciocho{
+    margin-top: 39px;
+}
+.veinticuatro {
+    margin-top: 30px;
+}
+.m, .n, .ñ, .o, .p, .q, .r, .s, .t, .u, .v, .w {
+    margin-right:30px;
+}
+
+aside {
+    display: inline-flex;
+    float: right;
+    font-family: sans-serif;
+    margin-right: 30px;
+    flex-direction: column;
+    width: 399px;
+    margin-top: 10px;
+}
+.desafiosd{
+    background-color: white;
+    border-color: #460175;
+    padding:20px;
+    border-radius: 20px;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2);
+
+}
+.desafiosd h2 {
+    color: #1D1C1C;
+}
+.desafiosd a {
+    color: #460175;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.mejora{
+    background-color: white;
+    border-color: #460175;
+    padding-bottom: 0;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 20px;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2);
+}
+.mejora h2 { 
+    color: #1D1C1C;
+}
+.mejora p {
+    color: #1D1C1C;
+    font-weight: bold;
+}
+
+/*PERFIL*/
+
+.practicas{
+    background-color: white;
+    border-color: #460175;
+    padding-bottom: 0;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 20px;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2);
+}
+.miperfil{
+    font-family: sans-serif;
+}
+.perfil h2{
+    font-size: 22px;
+    font-family: sans-serif;
+}
+.miperfil p{
+    color: #9800AB;
+}
+.logros{
+    font-family: sans-serif;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.logro1, .logro2, .logro3 {
+    width: 659px;
+    border-radius: 19px;
+    padding:20px;
+    border-color: #BE26A4;
+    border-width: medium;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2);
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.juan, .juana, .andina {
+    border-radius: 19px;
+    padding:20px;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2);
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.usa {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 110px;
+}
+.practicas p{
+    color: #6C6C6C;
+}
+
+/*PRACTICAS*/
+
+.practica{
+    font-family: sans-serif;
+}
+    .practica h2 {
+        margin-top: 50px;
+        margin-bottom: 20px;
+        color: #1D1C1C;
+    }
+
+.JuanM, .JuanaD, .AndinaG {
+    border-radius: 19px;
+    padding:20px;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2);
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 660px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.desafiosdia {
+    background-color: white;
+    border-color: #460175;
+    padding:20px;
+    border-radius: 20px;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2);
+
+}
+.desafiosdia a {
+    text-decoration: none;
+    color: #460175;
+}
+.aprendess {
+    background-color: white;
+    border-color: #460175;
+    padding-bottom: 0;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 20px;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2);
+}
+.aprendess p{
+    color: #978E8E;
+    font-weight: bold;
+}
+.aprendess img{
+  float: right;
+}
+.desafiosm{
+    background-color: white;
+    border-color: #460175;
+    padding-bottom: 0;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 20px;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2);
+}
+.desafiosm p {
+    color: #978E8E;
+    font-weight: bold;
+}
+
+/*DESAFIOS*/
+
+.desafioss {
+    margin-top: 70px;
+}
+.desafiosmes {
+    background-color: white;
+    border-color: #460175;
+    padding-bottom: 0;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 20px;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2);
+}
+.desafiosmes p{
+    color: #978E8E;
+    font-weight: bold;
+}
+.desafiosmes img {
+    float: right;
+}
