@@ -2,9 +2,10 @@
     padding: 0;
     margin: 0;
 }
+
 #Index{
     background-image:url("IMGS/INDEX/\(1\)\ TIENES\ UNA\ CUENTA_.jpg");
-    height: 300px;
+    height: 600px;
 }
 
 /* HEADER INICIAL*/
@@ -30,6 +31,7 @@ padding-top: 60px;
     flex-direction: column;
     margin-top: 71px;
     font-family: sans-serif;
+    max-height: fit-content;
 }
 .indexmain h1 {
    text-align: center;
@@ -86,6 +88,9 @@ padding-top: 60px;
 }
 
 /* REGISTRO*/
+.registroA{
+    max-height: fit-content;
+}
 
 .company {
     text-decoration: none;
@@ -107,7 +112,7 @@ padding-top: 60px;
     padding-left: 60px;
  }
 .pad {
-    padding-top: 60px;
+    padding-top: 40px;
 }
 .form {
     background: rgb(107,1,165);
@@ -116,7 +121,7 @@ padding-top: 60px;
     padding-top:39px ;
     padding-left: 116px;
     padding-right: 116px;
-    padding-bottom: 90px;
+    padding-bottom: 60px;
     font-family: sans-serif;
     color: white;
     margin-top: 30px;
@@ -368,13 +373,19 @@ padding-top: 60px;
 
 /*INICIO*/
 
-.nav nav {
+.levelone{
+    margin-top: 30px;
+}
+
+.nav  {
     float: left;
-    padding-top: 2.5%;
     padding-left: 3%;
     padding-right: 5%;
     padding-bottom: 2.5%;
     height: 1200px;
+    align-items: center;
+    position:sticky;
+    
 }
 .nav a {
     font-family: sans-serif;
@@ -385,12 +396,16 @@ padding-top: 60px;
     font-weight: bold;
     color: #460175;
 }
+.nav a b {
+    color: #460175;
+}
+
 .aprender, .practicar, .desafios, .perfil {
    flex-direction: column;
    border-radius: 12px;
    padding:5px;
    margin:10px;
-   align-items: center;
+   text-decoration: none;
 }
 
 .nivel1{
@@ -505,13 +520,14 @@ aside {
 }
 .miperfil{
     font-family: sans-serif;
+    margin-top: 30px;
 }
 .perfil h2{
     font-size: 22px;
     font-family: sans-serif;
 }
 .miperfil p{
-    color: #9800AB;
+    color: white;
 }
 .logros{
     font-family: sans-serif;
@@ -524,12 +540,26 @@ aside {
     width: 659px;
     border-radius: 19px;
     padding:20px;
-    border-color: #BE26A4;
+    border-color: #FFFFFF;
     border-width: medium;
     box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2);
     margin-top: 20px;
     margin-bottom: 20px;
 }
+.logro1 {
+    background-color: #BE26A4;
+    color: white;
+}
+.logro2 {
+    background-color: #2690BE;
+    color: white;
+}
+
+.logro3{
+    background-color: cadetblue;
+    color: white;
+}
+
 .juan, .juana, .andina {
     border-radius: 19px;
     padding:20px;
@@ -550,9 +580,9 @@ aside {
 
 .practica{
     font-family: sans-serif;
+    margin-top: 30px;
 }
     .practica h2 {
-        margin-top: 50px;
         margin-bottom: 20px;
         color: #1D1C1C;
     }
@@ -615,7 +645,7 @@ aside {
 /*DESAFIOS*/
 
 .desafioss {
-    margin-top: 70px;
+    margin-top: 30px;
 }
 .desafiosmes {
     background-color: white;
