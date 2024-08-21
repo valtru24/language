@@ -5,7 +5,9 @@
 
 #Index{
     background-image:url("IMGS/INDEX/\(1\)\ TIENES\ UNA\ CUENTA_.jpg");
-    height: 600px;
+    height: 100%;
+    width: 100%;
+    padding-top: 5%;
 }
 
 /* HEADER INICIAL*/
@@ -14,13 +16,13 @@
 font-family: sans-serif;
 justify-content: center;
 display: flex;
-padding-top: 60px;
+padding-top: 6%;
 }
 .indexheader a {
     text-decoration: none;
     color: #BF1EAB;
     font-weight: bolder;
-    font-size: 28px;
+    font-size: 1.75rem;
     }
     
 /* PRINCIPAL INDEX*/
@@ -29,20 +31,20 @@ padding-top: 60px;
     display: flex;
     align-items: center;
     flex-direction: column;
-    margin-top: 71px;
+    margin-top: 5.5%;
     font-family: sans-serif;
     max-height: fit-content;
 }
 .indexmain h1 {
    text-align: center;
    color: #83015E;
-   font-size: 26px;
+   font-size: 1.625rem;
    font-weight: bold;
 }
 
 .potencia {
     text-align: center;
-    font-size: 16px;
+    font-size: 1rem;
     color: #B0B0B0;
  }
 
@@ -68,7 +70,7 @@ padding-top: 60px;
 .expertosLogin p {
     color: #9800AB;
     font-weight: bold;
-    font-size: 16px;
+    font-size: 1rem;
 }
 
 .expertosLogin p a {
@@ -79,7 +81,7 @@ padding-top: 60px;
 .expertosSignin p {
     color: #B0B0B0;
     font-weight: bold;
-    font-size: 16px;
+    font-size: 1rem;
 }
 
 .expertosSignin p a {
@@ -96,7 +98,7 @@ padding-top: 60px;
     text-decoration: none;
     color: #BF1EAB;
     font-weight: bolder;
-    font-size: 28px;
+    font-size: 1.75rem;
     font-family: sans-serif;
  align-self: center;
   }
@@ -109,19 +111,19 @@ padding-top: 60px;
  
  .volver {
     position: absolute;
-    padding-left: 60px;
+    padding-left: 5%;
  }
 .pad {
-    padding-top: 40px;
+    padding-top: 6.5%;
 }
 .form {
     background: rgb(107,1,165);
     background: linear-gradient(180deg, rgba(107,1,165,1) 0%, rgba(65,1,110,1) 100%);   
     width: fit-content;
-    padding-top:39px ;
-    padding-left: 116px;
-    padding-right: 116px;
-    padding-bottom: 60px;
+    padding-top:2%;
+    padding-left: 15%;
+    padding-right: 15%;
+    padding-bottom: 5%;
     font-family: sans-serif;
     color: white;
     margin-top: 30px;
