@@ -5,7 +5,9 @@
 
 #Index{
     background-image:url("IMGS/INDEX/\(1\)\ TIENES\ UNA\ CUENTA_.jpg");
-    height: 600px;
+    height: 100%;
+    width: 100%;
+    padding-top: 5%;
 }
 
 /* HEADER INICIAL*/
@@ -14,13 +16,13 @@
 font-family: sans-serif;
 justify-content: center;
 display: flex;
-padding-top: 60px;
+padding-top: 6%;
 }
 .indexheader a {
     text-decoration: none;
     color: #BF1EAB;
     font-weight: bolder;
-    font-size: 28px;
+    font-size: 1.75rem;
     }
     
 /* PRINCIPAL INDEX*/
@@ -29,20 +31,20 @@ padding-top: 60px;
     display: flex;
     align-items: center;
     flex-direction: column;
-    margin-top: 71px;
+    margin-top: 5.5%;
     font-family: sans-serif;
     max-height: fit-content;
 }
 .indexmain h1 {
    text-align: center;
    color: #83015E;
-   font-size: 26px;
+   font-size: 1.625rem;
    font-weight: bold;
 }
 
 .potencia {
     text-align: center;
-    font-size: 16px;
+    font-size: 1rem;
     color: #B0B0B0;
  }
 
@@ -68,7 +70,7 @@ padding-top: 60px;
 .expertosLogin p {
     color: #9800AB;
     font-weight: bold;
-    font-size: 16px;
+    font-size: 1rem;
 }
 
 .expertosLogin p a {
@@ -79,7 +81,7 @@ padding-top: 60px;
 .expertosSignin p {
     color: #B0B0B0;
     font-weight: bold;
-    font-size: 16px;
+    font-size: 1rem;
 }
 
 .expertosSignin p a {
@@ -96,7 +98,7 @@ padding-top: 60px;
     text-decoration: none;
     color: #BF1EAB;
     font-weight: bolder;
-    font-size: 28px;
+    font-size: 1.75rem;
     font-family: sans-serif;
  align-self: center;
   }
@@ -109,22 +111,22 @@ padding-top: 60px;
  
  .volver {
     position: absolute;
-    padding-left: 60px;
+    padding-left: 5%;
  }
 .pad {
-    padding-top: 40px;
+    padding-top: 6.5%;
 }
 .form {
     background: rgb(107,1,165);
     background: linear-gradient(180deg, rgba(107,1,165,1) 0%, rgba(65,1,110,1) 100%);   
-    width: fit-content;
-    padding-top:39px ;
-    padding-left: 116px;
-    padding-right: 116px;
-    padding-bottom: 60px;
+    width: 40%;
+    padding-top:2%;
+    padding-left: 15%;
+    padding-right: 15%;
+    padding-bottom: 5%;
     font-family: sans-serif;
     color: white;
-    margin-top: 30px;
+    margin-top: 5%;
     border-radius: 26px;
     box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2);
     text-align: left;
@@ -134,12 +136,12 @@ padding-top: 60px;
     border-radius: 12px;
     border: none;
     background-color: white;
-    width: 387px;
     height: 30px;
+    width: 100%;
     text-align: center;
 }
 .form h3 {
-  font-size: 20px;
+  font-size: 1.25rem;
   text-align: center;
 }
 .continuar{
@@ -147,10 +149,10 @@ padding-top: 60px;
     border: none;
     background-color: #460275;
     opacity: 75%;
-    width: 387px;
+    width: 30%;
     height: 30px;
     color: white;
-    font-size: 20px;
+    font-size: 1.25rem;
     font-weight: bold;
     box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2);
 }
@@ -166,14 +168,14 @@ padding-top: 60px;
     background: rgb(107,1,165);
     background: linear-gradient(180deg, rgba(107,1,165,1) 0%, rgba(65,1,110,1) 100%);   
     text-align: center;
-    width: fit-content;
-    padding-top:39px ;
-    padding-left: 116px;
-    padding-right: 116px;
-    padding-bottom: 39px;
+    width: 40%;
+    padding-top: 2.5%;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 2.5%;
     font-family: sans-serif;
     color: white;
-    margin-top: 30px;
+    margin-top: 2.5%;
     border-radius: 26px;
     box-shadow: lightslategray;
 }
@@ -181,14 +183,15 @@ padding-top: 60px;
     border-radius: 12px;
     border: none;
     background-color: white;
-    width: 387px;
-    height: 30px;
+    width: 100%;
+    height: fit-content;
     text-align: center;
     color: #9800AB;
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: bold;
     align-content: center;
-    margin: 15px;
+    margin: 2%;
+    padding: 1%;
 }
 .obje:active{
     background-color: #9800AB;
@@ -200,26 +203,27 @@ padding-top: 60px;
 }
 
 /* SABES ALGO*/
+/* CAMBIAR IMGS*/
 
 .inicial, .examen {
-    width: 268px;
+    width: fit-content;
     height: 343px;
     box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2);
     border-radius: 26px;
-    align-items: center;
-    align-content: center;
     justify-content: center;
     display: flex;
     flex-direction: column;
-    margin-top: 120px;
+    margin-top: 10%;
     font-family: sans-serif;
     text-align: center;
+    padding-left: 5%;
+    padding-right: 5%;
 }
 .inicial{
-    margin-right: 40px;
+    margin-right: 5%;
 }
 .examen{
-    margin-left: 40px;
+    margin-left: 5%;
 }
 .nivel a {
     text-decoration: none;
@@ -231,10 +235,11 @@ padding-top: 60px;
     display: flex;
     flex-direction: row;
     justify-content: center;
+    align-content: center;
 
 }
 .nivel h4{
-    font-size: 16px;
+    font-size: 1rem;
     color:#9800AB;
     font-weight: bold;
 }
@@ -246,20 +251,21 @@ padding-top: 60px;
 
 /* EXAMEN*/
 
-.answers{
+#respuesta{
     font-family: sans-serif;  
     display: flex;
     flex-direction: column;
     align-items: center;
+    align-content: center;
 }
 .exam p {
     font-family: sans-serif;
-    font-size: 16px;
+    font-size: 1rem;
     color: #9800AB;  
 }
 #pregunta{
     font-weight: bold;
-    font-size: 20px;
+    font-size: 1.25rem;
     color: #9800AB;
     font-family: sans-serif;
 }
@@ -268,7 +274,7 @@ padding-top: 60px;
     cursor: pointer; /* Cambia el cursor al pasar sobre las respuestas */
     background-color: white;
     border-radius: 12px;
-    width: 855px;
+    width: 60%;
     height: 57px;
     align-content: center;
     text-align: center;
@@ -277,25 +283,30 @@ padding-top: 60px;
     box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2);
     text-decoration: none;
     list-style: none;
+ 
 }
 #respuesta li:hover{
     background-color: #9800AB;
     color: white;
 }
 
-.exam button {
+.answers button {
     border-radius: 12px;
     border: none;
     background-color: #460275;
     opacity: 75%;
-    width: 387px;
+    width: 60%;
     height: 30px;
     color: white;
-    font-size: 20px;
+    font-size: 1.25rem;
     font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
 .left {
-    padding-left: 290px; 
+    padding-left: 20%; 
 }
 .puntitos{
     justify-content: center;
@@ -312,22 +323,27 @@ padding-top: 60px;
     justify-content: center;
 }
 .intermedio{
-    border-radius: 12px;
-    border: none;
     background-color: #FF5C00;
     opacity: 75%;
-    width: 387px;
-    height: 30px;
-    color: white;
-    font-size: 20px;
-    font-weight: bold; 
     box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2);
+    border-radius: 12px;
+    border: none;
+    width: 30%;
+    height: fit-content;
+    color: white;
+    font-size: 1.25rem;
+    font-weight: bold;
+    display: flex;
+    flex-direction: row;
+   justify-content: center;
+   padding-top: 0.5%;
+   padding-bottom: 0.5%;
 }
 
-.medio{
-    display: flex;
-    justify-content: center;
+.medio a{
+    text-decoration: none;
 }
+
 .Barra5 {
     display: flex;
     justify-content: center; 
@@ -338,11 +354,11 @@ padding-top: 60px;
     background-color:#FF5C00; 
     opacity: 95%;
     text-align: center;
-    width: fit-content;
-    padding-top:39px ;
-    padding-left: 116px;
-    padding-right: 116px;
-    padding-bottom: 39px;
+    width: 40%;
+    padding-top: 2.5%;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 2.5%;
     font-family: sans-serif;
     color: white;
     margin-top: 30px;
@@ -353,14 +369,16 @@ padding-top: 60px;
     border-radius: 12px;
     border: none;
     background-color: white;
-    width: 387px;
-    height: 30px;
+    width: 100%;
+    height: fit-content;
     text-align: center;
     color: #FF5C00;
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: bold;
     align-content: center;
-    margin: 15px;
+    margin: 2%;
+    padding: 1%;
+
 }
 .rub:active{
     background-color: #FF5C00;
