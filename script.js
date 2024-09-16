@@ -135,3 +135,39 @@ var preguntas = [
     }
   }
 
+
+   function seleccionarRespuesta(event) {
+    var lista = document.getElementById("respuesta");
+    var items = lista.getElementsByTagName("li");
+    
+    // Elimina la clase activa de todos los elementos
+    for (var i = 0; i < items.length; ++i) {
+        items[i].classList.remove("active");
+    }
+    
+    // Agrega la clase activa al elemento seleccionado
+    if (event.target.tagName === "LI") {
+        event.target.classList.add("active");
+    }
+}
+
+
+document.addEventListener('DOMContentLoaded', () => {
+  // Para la página de rubro
+  const botonesRubro = document.querySelectorAll('.rub');
+  botonesRubro.forEach(boton => {
+      boton.addEventListener('click', () => {
+          botonesRubro.forEach(b => b.classList.remove('active'));
+          boton.classList.add('active');
+      });
+  });
+
+  // Para la página de objetivo
+  const botonesObjetivo = document.querySelectorAll('.obje');
+  botonesObjetivo.forEach(boton => {
+      boton.addEventListener('click', () => {
+          botonesObjetivo.forEach(b => b.classList.remove('active'));
+          boton.classList.add('active');
+      });
+  });
+});
