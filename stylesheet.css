@@ -920,6 +920,8 @@ aside .mejora img {
         order: -1; 
         width: 60%;
         align-items: left;
+        float: left;
+        margin-left:35%;
     }
     aside .desafiosd,
 aside .mejora {
