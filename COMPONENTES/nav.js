@@ -12,30 +12,31 @@ class HeaderComponent extends HTMLElement {
                     </div>
 
                     <div class="aprender">
-                        <a href="#">
+                        <a href="inicio.html">
                             <img src="IMGS/INICIO/APRENDER.svg" alt="APRENDER">
-                            <b>APRENDER</b>
+                            <span> APRENDER</span>
                         </a>
                     </div>
 
                     <div class="practicar">
                         <a href="practicar.html">
                             <img src="IMGS/INICIO/PRACTICAR.svg" alt="PRACTICAR">
-                            PRACTICAR
+                            <span>PRACTICAR</span>
                         </a>
                     </div>
 
                     <div class="desafios">
                         <a href="desafios.html">
                             <img src="IMGS/INICIO/DESAFIOS.svg" alt="DESAFIOS">
-                            DESAFIOS
+                            <span>DESAFIOS</span>
+                            
                         </a>
                     </div>
 
                     <div class="perfil">
                         <a href="perfil.html">
                             <img src="IMGS/INICIO/TUPERFIL.svg" alt="TUPERFIL">
-                            TU PERFIL
+                            <span>TU PERFIL</span>
                         </a>
                     </div>
                 </nav>
@@ -45,3 +46,17 @@ class HeaderComponent extends HTMLElement {
 }
 
 customElements.define('header-component', HeaderComponent);
+
+const navLinks = document.querySelectorAll('.nav a');
+
+
+navLinks.forEach(link => {
+    link.addEventListener('click', function() {
+        
+        navLinks.forEach(link => link.classList.remove('active'));
+
+       
+        this.classList.add('active');
+    });
+});
+
