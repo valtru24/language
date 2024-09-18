@@ -191,3 +191,33 @@ window.onload = function() {
     }    
 }
   
+function Ingreso() {var usuarios2 = [
+  {
+      "nombre":nombre,
+      "contraseña":contraseña
+  },
+];
+  var nombre = document.getElementById("nombre").value;
+  var contraseña = document.getElementById("contraseña").value;
+
+
+     if (!nombre) {
+      alert('Por favor, complete el campo de usuario.');
+      return;
+  }
+     if (!contraseña) {
+      alert('Por favor, complete el campo de Contraseña.');
+      return;
+  }
+
+
+  var elemento = {
+      "nombre": nombre,
+      "contraseña": contraseña,
+  };
+  usuarios2.push(elemento);
+
+
+  alert("Inicio de sesión");
+  window.location.href = "inicio.html";
+}
