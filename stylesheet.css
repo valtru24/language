@@ -931,28 +931,53 @@ aside .mejora {
 
 /*PERFIL*/
 
-.practicas{
-    background-color: white;
-    border-color: #460175;
-    padding-bottom: 0;
-    padding-top: 20px;
-    padding-left: 20px;
-    padding-right: 20px;
-    border-radius: 20px;
-    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2);
+.perfiltodo {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-left: 25%;
+    gap: 20px;
 }
-.miperfil{
+
+.miperfil {
     font-family: sans-serif;
     margin-top: 30px;
 }
-.perfil h2{
-    font-size: 22px;
+
+.miperfil img {
+    margin-left: 25%;
+}
+
+.nombre{
+    margin-left: 37.5%;
+    font-size: 1.5rem;
     font-family: sans-serif;
 }
-.miperfil p{
+.logra{
+    margin-left: 25%;
+    font-size: 1.5rem;
+    font-family: sans-serif;
+}
+.miperfil p {
+    text-align: left; 
+    margin-left: 25%;
+}
+.logros p {
+    margin: 0%;
+}
+
+.logros p {
     color: white;
 }
-.logros{
+
+.usa {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 110px;
+}
+
+.logros {
     font-family: sans-serif;
     justify-content: center;
     display: flex;
@@ -960,44 +985,115 @@ aside .mejora {
 }
 
 .logro1, .logro2, .logro3 {
-    width: 659px;
-    border-radius: 19px;
-    padding:20px;
-    border-color: #FFFFFF;
-    border-width: medium;
     box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2);
+    max-width: 60%;
+    padding: 2rem;
     margin-top: 20px;
-    margin-bottom: 20px;
+    border-radius: 20px;
+    box-sizing: border-box;
+    clear: left;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: 35%;
 }
+
 .logro1 {
     background-color: #BE26A4;
     color: white;
 }
+
 .logro2 {
     background-color: #2690BE;
     color: white;
 }
 
-.logro3{
+.logro3 {
     background-color: cadetblue;
     color: white;
 }
 
+/* SIDE */
+.practicas {
+    background-color: white;
+    border-color: #460175;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+}
+
+.practicas p {
+    color: #6C6C6C;
+}
+
 .juan, .juana, .andina {
     border-radius: 19px;
-    padding:20px;
-    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
     margin-top: 20px;
     margin-bottom: 20px;
 }
-.usa {
-    display: flex;
-    justify-content: space-between;
-    padding-right: 110px;
+
+@media (max-width: 768px) {
+
+    .nombre{
+        margin-left:0;
+        font-size: 1.5rem;
+        font-family: sans-serif;
+    }
+    .logra{
+        margin-left: 25%;
+        font-size: 1.5rem;
+        font-family: sans-serif;
+    }
+
+    .miperfil img {
+        margin-left: 25%;
+        width: 70%;
+    }
+
+    .usa img {
+        width: 10%;
+    
+    }
+
+    .usa {
+        flex-direction: row;
+        align-items:flex-start;
+        padding-right: 0;
+        margin-left: 25%;
+        margin-right: 5%;
+    }
+
+    .logros {
+        align-items: center;
+        justify-content: flex-start;
+    }
+
+    .logro1, .logro2, .logro3 {
+        flex: 1;
+        width: 100%;
+        padding: 1rem;
+    }
+
+    .practicas {
+        width: 100%;
+        padding: 5%;
+        margin-bottom: 10%;
+    }
+
+    .juan, .juana, .andina {
+        width: 80%;
+        padding: 5%;
+    }
+
+    .logros p {
+        text-align: left; 
+    }
 }
-.practicas p{
-    color: #6C6C6C;
-}
+
+
+
 
 /*PRACTICAS*/
 /*MAIN*/
@@ -1090,24 +1186,25 @@ aside .desafiosm img {
 }
 
 @media (max-width: 768px) {
- .practicatodo{
-    flex-direction: column; 
-    justify-content: flex-start;
-    align-items: center;
- }
+    
+    #practicatodo {
+        display: flex;
+        flex-direction: column; 
+        justify-content: flex-start;
+        align-items: center;
+    }
+
     aside {
-        order: -1; 
+        order: -1;
         width: 50%; 
     }
 
     .practica {
-        order: 2; 
+        order: 2;
         width: 100%; 
         padding: 1rem;
         clear: both;
-        
     }
-
 
     aside .desafiosdia,
     aside .aprendess,
@@ -1117,47 +1214,115 @@ aside .desafiosm img {
     }
 
     .practica img {
-        width: 100%; 
+        width: 100%;
         margin-right: 0;
+    }
+
+    .pratice {
+        flex: 1;
+        clear: both;
+        width: 100%;
+    }
+
+    .JuanM, .JuanaD, .AndinaG {
+        flex: 1;
+        width: 100%;
+        padding: 1rem;
     }
 }
 
 /*DESAFIOS*/
 
+.def {
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; 
+}
+
+.desafioss img {
+    width: 100%; 
+}
+
 .desafioss {
+    display: flex;
+    flex-direction: column; 
+    margin-left: 25%; 
+    gap: 20px; 
     margin-top: 30px;
 }
+
 .desafiosmes {
     background-color: white;
     border-color: #460175;
-    padding-bottom: 0;
-    padding-top: 20px;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding: 20px; 
     border-radius: 20px;
     box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
 }
-.desafiosmes p{
+
+
+.desafiosmes p {
     color: #978E8E;
     font-weight: bold;
 }
+
 .desafiosmes img {
     float: right;
+    width: 50%; 
 }
 
+@media (max-width: 768px) {
+    .def {
+        flex-direction: column; 
+        align-items: center; 
+    }
+
+    .desafioss {
+        margin-left: 25%; 
+        gap: 10px;
+        order: 2;
+        width: 70%; 
+        padding: 1rem;
+        clear: both;
+    }
+
+    .desafiosmes {
+        width: 100%; 
+        padding: 5%; 
+        margin-bottom: 5%;
+        box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2); 
+    }
+    .desafiosmes p {
+       font-size: 0.9rem;
+    }
+    
+    .desafiosmes img {
+        width: 50%; 
+        float: none; 
+        margin-top: 10px; 
+    }
+}
+
+
+/*SELECCIÓN*/
+
 #respuesta li.active {
-    background-color: #9800AB; /* Color para la respuesta seleccionada */
-    color: white; /* Color del texto para la respuesta seleccionada */
+    background-color: #9800AB; 
+    color: white; 
 }
 
 /* Para los botones en rubro.html */
 .rub.active {
-    background-color: hsl(19, 100%, 34%); /* Color para el botón seleccionado */
-    color: white; /* Color del texto para el botón seleccionado */
+    background-color: hsl(19, 100%, 34%); 
+    color: white; 
 }
 
 /* Para los botones en objetivo.html */
 .obje.active {
-    background-color: #9800AB; /* Color para el botón seleccionado */
-    color: white; /* Color del texto para el botón seleccionado */
+    background-color: #9800AB; 
+    color: white; 
 }
+
+

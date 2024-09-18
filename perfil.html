@@ -12,51 +12,8 @@
     <link rel="stylesheet" href="stylesheet.css">
 </head>
 <body>
-    <div id="inicio">
-
-       <!-- Barra de navegacion -->
-     <section class="nav">
-        <nav>
-
-            <div class="LOGO">
-                <a href="inicio.html">
-                    <h2> 
-                    Language learner
-                    </h2>
-                </a>
-            </div>
-
-    <br> <br> <br>
-
-            <div class="aprender">
-                <a href="inicio.html">
-                    <img src="IMGS/INICIO/APRENDER.svg" alt="APRENDER">
-                    APRENDER
-                </a>
-            </div>
-    
-            <div class="practicar">
-                <a href="practicar.html">
-                    <img src="IMGS/INICIO/PRACTICAR.svg" alt="PRACTICAR">
-                    PRACTICAR
-                </a>
-            </div>
-    
-            <div class="desafios">
-                <a href="desafios.html">
-                    <img src="IMGS/INICIO/DESAFIOS.svg" alt="DESAFIOS">
-                   DESAFIOS
-                </a>
-            </div> 
-
-            <div class="perfil">
-                <a href="#">
-                    <img src="IMGS/INICIO/TUPERFIL.svg" alt="TUPERFIL">
-                <b>TU PERFIL</b>
-                </a>
-            </div>    
-        </nav>
-     </section>
+    <header-component></header-component>
+    <div id="perfiltodo">
 
            <!-- SIDE -->
 
@@ -95,18 +52,18 @@
     <main>
           <section class="miperfil">
 
-            <div class="miperfil">
-               <img src="IMGS/PERFIL/Group 59.png" alt="perfil">
+            <div class="miperfile">
+               <img src="IMGS/PERFIL/Group 59.png" alt="perfil" class="foto">
 <br><br>
         <div class="usa">
-            <h2>Eugenia</h2>
+            <h2 class="nombre">Eugenia</h2>
             <img src="IMGS/PERFIL/Flag.svg" alt="">
         </div>
             <p>Se unió en Junio de 2024</p>
             </div>
 <br> <br> <br>
 
-            <h2>Logros</h2>
+            <h2 class="logra">Logros</h2>
 
             <div class="logros">
 
@@ -133,5 +90,6 @@
           </section>
     </main>
     </div>
+    <script src="COMPONENTES/nav.js"></script>
 </body>
 </html>
