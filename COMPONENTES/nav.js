@@ -6,7 +6,7 @@ class HeaderComponent extends HTMLElement {
             <section class="nav" id="nav">
                 <nav>
                     <div class="LOGO">
-                        <a href="#">
+                        <a href="inicio.html">
                             <h2>Language learner</h2>
                         </a>
                     </div>
@@ -48,15 +48,19 @@ class HeaderComponent extends HTMLElement {
 customElements.define('header-component', HeaderComponent);
 
 const navLinks = document.querySelectorAll('.nav a');
+const activeLink = localStorage.getItem('activeLink');
 
+if (activeLink) {
+    document.querySelector(`.nav a[href="${activeLink}"]`).classList.add('active');
+}
 
 navLinks.forEach(link => {
     link.addEventListener('click', function() {
-        
         navLinks.forEach(link => link.classList.remove('active'));
 
-       
         this.classList.add('active');
+        localStorage.setItem('activeLink', this.getAttribute('href'));
     });
 });
+
 

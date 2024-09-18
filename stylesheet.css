@@ -812,7 +812,6 @@ body {
 
 /* EJERCICIOS */
 
-
 .ejercicios .seis, .ejercicios .doce,
 .ejercicios .dieciocho, .ejercicios .veinticuatro {
     display: flex;
@@ -930,7 +929,6 @@ aside .mejora {
 }
 
 /*PERFIL*/
-
 .perfiltodo {
     display: flex;
     flex-direction: row;
@@ -950,7 +948,7 @@ aside .mejora {
 }
 
 .nombre{
-    margin-left: 37.5%;
+    margin-left: 25%;
     font-size: 1.5rem;
     font-family: sans-serif;
 }
@@ -973,10 +971,12 @@ aside .mejora {
 
 .usa {
     display: flex;
-    justify-content: space-between;
-    padding-right: 110px;
+    justify-content: flex-start;
 }
-
+.usa img {
+    width: 20%;
+    padding-left: 200%;
+}
 .logros {
     font-family: sans-serif;
     justify-content: center;
@@ -1033,7 +1033,20 @@ aside .mejora {
     margin-top: 20px;
     margin-bottom: 20px;
 }
-
+@media(max-width:1400px){
+    .miperfile{
+        width: 50%;
+        margin-left: 10%;
+    }
+    .miperfile img {
+        width: 100%;
+    }
+    .usa img {
+        width: 20%;
+        padding-left: 27%;
+    }
+    
+}
 @media (max-width: 768px) {
 
     .nombre{
@@ -1046,15 +1059,19 @@ aside .mejora {
         font-size: 1.5rem;
         font-family: sans-serif;
     }
+    .miperfile{
+        width: 75%;
+        margin-left: 5%;
+    }
 
     .miperfil img {
         margin-left: 25%;
-        width: 70%;
+        width: 100%;
     }
 
     .usa img {
-        width: 10%;
-    
+        width: 20%;
+        padding-left: 50%;
     }
 
     .usa {
@@ -1062,7 +1079,7 @@ aside .mejora {
         align-items:flex-start;
         padding-right: 0;
         margin-left: 25%;
-        margin-right: 5%;
+        margin-right: 0%;
     }
 
     .logros {
@@ -1091,9 +1108,6 @@ aside .mejora {
         text-align: left; 
     }
 }
-
-
-
 
 /*PRACTICAS*/
 /*MAIN*/
