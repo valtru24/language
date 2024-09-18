@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Con nuestra aplicación móvil y web, todos pueden usar Language Learner. Aprende inglés con lecciones cortas basadas en la ciencia y enfocadas a tu área profesional.">
-    <meta name="keyworkds" content="aprender, inglés, lecciones, clases, traducir, idioma, estudiar, cursos, lenguaje, trabajo, entrevistas">
+    <meta name="keywords" content="aprender, inglés, lecciones, clases, traducir, idioma, estudiar, cursos, lenguaje, trabajo, entrevistas">
     <meta name="author" content="Carolina Carro - Valeria Trullás">
     <meta name="publisher" content="ISEC">
     <title>Language Learner</title>
@@ -47,11 +47,18 @@
         </form>
 
     </center>
-    <br> <br> 
-        <div class="Barra1">
-            <img src="IMGS/FORM BARRA/Group 20.png" alt="barra1">
-        </div>
-    <br> <br>
+    <br> 
+    <div class="progress-container">
+        <div class="progress-bar" id="progressBar"></div>
+    </div>
+    
     </main>
+
+    <script>
+        // inicia el progreso en 0%
+        localStorage.setItem('progress', 0); 
+        document.getElementById('progressBar').style.width = '0%';
+    </script>
+    
 </body>
 </html>

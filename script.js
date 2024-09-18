@@ -172,5 +172,22 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 });
 
+window.onload = function() {
+    
+    setTimeout(function() {
+        document.getElementById("pantalla-carga").style.display = "none";
+        document.getElementById("contenido-pagina").style.display = "block";
+    }, 1000);
 
+    // Mantiene las funciones anteriores de tu página
+    var pregunta = document.getElementById("pregunta");
+    pregunta.textContent = preguntas[index].pregunta;
+    
+    var respuesta = document.getElementById("respuesta");
+    for (let indexy = 0; indexy < 3; indexy++) {
+        var opcion = document.createElement("li");
+        opcion.textContent = preguntas[index].respuestas[indexy].respuesta;
+        respuesta.appendChild(opcion);
+    }    
+}
   
