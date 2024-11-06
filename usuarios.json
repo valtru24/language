@@ -1,0 +1,13 @@
+{
+    "usuarios": [
+      {
+        "nombre": "usuario1",
+        "mail": "usuario1@example.com",
+        "edad": 30,
+        "contraseña": "usuario123"
+      }
+    ]
+  }
+  
+  
+  

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Con nuestra aplicación móvil y web, todos pueden usar Language Learner. Aprende inglés con lecciones cortas basadas en la ciencia y enfocadas a tu área profesional.">
+    <meta name="keywords" content="aprender, inglés, lecciones, clases, traducir, idioma, estudiar, cursos, lenguaje, trabajo, entrevistas">
+    <meta name="author" content="Carolina Carro - Valeria Trullás">
+    <meta name="publisher" content="ISEC">
+    <title>Language Learner</title>
+    <link rel="stylesheet" href="stylesheet.css">
+</head>
+<body>
+    
+    <!-- EJERCICIOS -->
+    <main>
+
+        <div class="Logo">
+            <a href="inicio.html">
+                <h2>Language learner</h2>
+            </a>
+        </div>
+
+        <div class="arriba">
+            <p> EJERCICIOS 1</p> <br> 
+            <h2>Comienza tus lecciones</h2>
+        </div>
+
+        <div class="exam">
+            <div class="left">
+                <p>Selecciona la respuesta correcta</p><br>
+                <div class="completa"></div>
+
+                <div id="pregunta"></div><br><br>
+            </div>
+
+            <div class="answers">
+                <ul id="respuesta"></ul><br><br>
+                <center><button class="responde" id="responderBtn" onclick="Responder()">Responder</button></center>
+            </div>
+        </div>
+        <br>
+        
+    </main>
+
+    <script src="ejercicios.js"></script> 
+</body>
+</html>
+
+

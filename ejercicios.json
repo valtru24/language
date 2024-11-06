@@ -1,0 +1,25 @@
+{
+    "ejercicios": [
+      {
+        "numero": 1,
+        "pregunta": "Camisa in English",
+        "respuestas": ["Shirt", "T-shirt", "Skirt", "Blouse"],
+        "correcta": "Shirt"
+      },
+      {
+        "numero": 2,
+        "pregunta": "--- I young?",
+        "respuestas": ["Am", "Are", "Is", "Were"],
+        "correcta": "Am"
+      },
+      {
+        "numero": 3,
+        "pregunta": "Translate Bread",
+        "respuestas": ["Queso", "Raza", "Pan", "Pelota"],
+        "correcta": "Pan"
+      }
+    ]
+  }
+  
+  
+  
