@@ -1,13 +1,18 @@
-{
-    "usuarios": [
-      {
-        "nombre": "usuario1",
-        "mail": "usuario1@example.com",
-        "edad": 30,
-        "contraseña": "usuario123"
-      }
-    ]
+[
+  {
+    "nombre": "usuario1",
+    "mail": "usuario1@example.com",
+    "edad": 30,
+    "contraseña": "usuario123"
+  },
+  {
+    "nombre": "usuario2",
+    "mail": "usuario2@example.com",
+    "edad": 25,
+    "contraseña": "usuario456"
   }
+]
+
   
   
   

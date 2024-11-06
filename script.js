@@ -192,33 +192,53 @@ window.onload = function() {
     }    
 }
   
-function Ingreso() {var usuarios2 = [
-  {
-      "nombre":nombre,
-      "contraseña":contraseña
-  },
-];
-  var nombre = document.getElementById("nombre").value;
-  var contraseña = document.getElementById("contraseña").value;
+// Función para cargar los usuarios desde el archivo JSON
+async function cargarUsuarios() {
+  try {
+      // Realizamos una petición GET para obtener el archivo JSON
+      const response = await fetch('usuarios.json');
+      
+      // Verificamos si la respuesta fue exitosa
+      if (!response.ok) {
+          throw new Error('Error al cargar los usuarios.');
+      }
 
+      // Convertimos la respuesta JSON a un objeto JavaScript
+      const usuarios = await response.json();
+      return usuarios;
+  } catch (error) {
+      console.error(error);
+      alert('No se pudo cargar la base de datos de usuarios.');
+      return [];
+  }
+}
 
-     if (!nombre) {
+// INCIO DE SESION
+async function Ingreso() {
+  
+  const nombre = document.getElementById("nombre").value;
+  const contraseña = document.getElementById("contraseña").value;
+
+  if (!nombre) {
       alert('Por favor, complete el campo de usuario.');
       return;
   }
-     if (!contraseña) {
+  if (!contraseña) {
       alert('Por favor, complete el campo de Contraseña.');
       return;
   }
 
+  const usuarios = await cargarUsuarios();
 
-  var elemento = {
-      "nombre": nombre,
-      "contraseña": contraseña,
-  };
-  usuarios2.push(elemento);
+  const usuarioValido = usuarios.find(function(usuario) {
+      return usuario.nombre === nombre && usuario.contraseña === contraseña;
+  });
+  
+  if (!usuarioValido) {
+      alert('Usuario o contraseña incorrectos.');
+      return;
+  }
 
-
-  alert("Inicio de sesión");
+  alert("Inicio de sesión exitoso");
   window.location.href = "inicio.html";
 }
