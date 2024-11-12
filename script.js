@@ -180,7 +180,7 @@ window.onload = function() {
         document.getElementById("contenido-pagina").style.display = "block";
     }, 1000);
 
-    // Mantiene las funciones anteriores de tu página
+
     var pregunta = document.getElementById("pregunta");
     pregunta.textContent = preguntas[index].pregunta;
     
@@ -192,18 +192,14 @@ window.onload = function() {
     }    
 }
   
-// Función para cargar los usuarios desde el archivo JSON
+// RECONOCER USUARIO JSON
 async function cargarUsuarios() {
   try {
-      // Realizamos una petición GET para obtener el archivo JSON
       const response = await fetch('usuarios.json');
       
-      // Verificamos si la respuesta fue exitosa
       if (!response.ok) {
           throw new Error('Error al cargar los usuarios.');
       }
-
-      // Convertimos la respuesta JSON a un objeto JavaScript
       const usuarios = await response.json();
       return usuarios;
   } catch (error) {
@@ -242,3 +238,5 @@ async function Ingreso() {
   alert("Inicio de sesión exitoso");
   window.location.href = "inicio.html";
 }
+
+

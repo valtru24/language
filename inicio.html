@@ -159,23 +159,36 @@
                         </div>
                 </div>
             </div>
-
+            <button id="cargar-lecciones">Más lecciones</button>
           </section>
+          
+          <div id="contenedor-nivel3"></div>
 
            <!-- FORMULARIO -->
 <section class="contact-form">
-    <h2>Contacto para dudas o más información</h2>
-    <form id="contactForm" onsubmit="return enviarCorreo()" action="inicio.html">
-      <label for="message">Mensaje:</label>
-      <textarea id="message" name="message" rows="3" placeholder="Escribe tu mensaje aquí..." required></textarea>
-      <button type="submit">Enviar</button>
+    <form action="inicio.html" onsubmit="return enviarCorreo()">
+        <div class="form-group">
+            <label for="exampleInputEmail1">Correo electronico</label>
+            <input type="email" class="form-control" id="email" aria-describedby="emailHelp"
+                placeholder="Ingresa tu email">
+        </div>
+        <div class="form-group">
+            <label for="nombreUsuario">Nombre</label>
+            <input type="text" class="form-control" id="nombreUsuario" placeholder="Nombre">
+            <label for="apellidoUsuario">Apellido</label>
+            <input type="text" class="form-control" id="apellidoUsuario" placeholder="Apellido">
+            <label for="mensajeUsuario">Ingrese su mensaje</label>
+            <textarea class="form-control" id="mensajeUsuario" rows="3"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
     </form>
   </section>
 
     </main>
-    <script src="magicloop.js"></script>
+    <script src="mail.js"></script>
     <script src="COMPONENTES/nav.js"></script>
     <script src="ejercicios.js"></script>
+    <script src="+ejercicios.js"></script>
     </div>
 </body>
 </html>
