@@ -22,7 +22,7 @@ function enviarCorreo(){
     const usuario = document.getElementById("nombreUsuario").value;
     const apellido = document.getElementById("apellidoUsuario").value;
     const mensaje = document.getElementById("mensajeUsuario").value;
-    console.log(email,usuario,apellido,mensaje);
+    enviarDatos(email,usuario,apellido,mensaje);
     return false;
 
 }
