@@ -3,8 +3,8 @@ function enviarDatos(email, nombre, apellido, mensaje) {
     const nombreEncoded = encodeURIComponent(nombre);
     const apellidoEncoded = encodeURIComponent(apellido);
     const mensajeEncoded = encodeURIComponent(mensaje);
-
-    const url = `https://magicloops.dev/api/loop/run/loop/e9cdd4f9-a0d9-4ac8-8b8a-4c5c17a12dbe/run?EMAIL=${emailEncoded}&Nombre=${nombreEncoded}&Apellido=${apellidoEncoded}&Mensaje=${mensajeEncoded}`;
+    const url = `https://magicloops.dev/api/loop/dfd1284f-b5a9-41f2-b282-110bcead37df/run?email=${emailEncoded}&nombre=${nombreEncoded}&apellido=${apellidoEncoded}&mensaje=${mensajeEncoded}
+`;
 
     fetch(url, {
         mode: 'no-cors' // Modo no-cors, permite hacer la solicitud pero no obtener datos de la respuesta
